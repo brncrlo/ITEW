@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MediCare | Sign Up</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="account-page">
+    <!-- HEADER -->
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"> ✚ </span>
+
+        <span>
+          <strong>MediCare</strong>
+          <small>HEALTHCARE SYSTEM</small>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html"> Home </a>
+
+        <a href="doctors.html"> Doctors </a>
+
+        <a href="services.html"> Services </a>
+
+        <a href="appointments.html"> Appointments </a>
+
+        <a href="health-information.html"> Health Information </a>
+      </nav>
+    </header>
+
+    <!-- SIGN UP SECTION -->
+    <main class="account-container">
+      <section class="account-card signup-card">
+        <div class="account-logo">
+          <span class="brand-mark"> ✚ </span>
+        </div>
+
+        <h1>Create an Account</h1>
+
+        <p class="account-subtitle">Join MediCare and manage your healthcare</p>
+
+        <!-- SIGN UP FORM -->
+        <form id="signupForm">
+          <div class="two-inputs">
+            <label>
+              First Name
+
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First name"
+              />
+            </label>
+
+            <label>
+              Last Name
+
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last name"
+              />
+            </label>
+          </div>
+
+          <label>
+            Email Address
+
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="Enter your email"
+            />
+          </label>
+
+          <label>
+            Phone Number
+
+            <input
+              type="tel"
+              id="signupPhone"
+              placeholder="Enter your phone number"
+            />
+          </label>
+
+          <label>
+            Password
+
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Create a password"
+            />
+          </label>
+
+          <label>
+            Confirm Password
+
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm your password"
+            />
+          </label>
+
+          <label class="terms">
+            <input type="checkbox" id="terms"/>
+
+            <span>
+              I agree to the
+              <a href="#"> Terms and Conditions </a>
+            </span>
+          </label>
+
+          <a href="index.html" type="submit" class="account-btn">Create Account</a>
+        </form>
+
+        <div class="account-divider">
+          <span>OR</span>
+        </div>
+
+        <p class="account-switch">
+          Already have an account?
+
+          <a href="login.html"> Login </a>
+        </p>
+
+        <a href="index.html" class="back-home"> ← Back to Home </a>
+      </section>
+    </main>
+  </body>
+</html>

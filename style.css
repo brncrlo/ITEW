@@ -1,0 +1,1499 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+  font-size: 16px;
+}
+
+/* =========================================================
+   GENERAL CONTAINER
+========================================================= */
+
+.container {
+  width: min(1370px, calc(100% - 7%));
+  margin: auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+  height: 101px;
+  border-bottom: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.2%;
+  background: #fff;
+}
+
+/* =========================================================
+   WEBSITE BRAND / LOGO
+========================================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-decoration: none;
+  color: #122c40;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  background: #287d78;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.brand strong {
+  display: block;
+  font-size: 29px;
+  line-height: 27px;
+}
+
+.brand small {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  margin-top: 3px;
+}
+
+/* =========================================================
+   MAIN NAVIGATION
+========================================================= */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.main-nav a {
+  color: #004e50;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #287d78;
+}
+
+/* =========================================================
+   HOME PAGE - HERO SECTION
+========================================================= */
+
+.hero {
+  min-height: 465px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  padding: 58px 7% 32px;
+}
+
+.hero-copy h1 {
+  font-size: 62px;
+  line-height: 1.22;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.hero-copy h1 span {
+  color: #2d8585;
+}
+
+.hero-copy p {
+  font-size: 23px;
+  line-height: 1.45;
+  max-width: 570px;
+  margin: 23px 0 42px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 30px;
+}
+
+/* =========================================================
+   GENERAL BUTTONS
+========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+  padding: 0 28px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.btn-primary {
+  background: #2d8585;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 2px solid #2d8585;
+  color: #111;
+  background: #fff;
+}
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-image-wrap {
+  position: relative;
+}
+
+.hero-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =========================================================
+   HERO SLIDER DOTS
+========================================================= */
+
+.slider-dots {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 17px;
+}
+
+.slider-dots i {
+  width: 20px;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+  display: block;
+}
+
+.slider-dots i.current {
+  background: #168b8b;
+}
+
+/* =========================================================
+   HOME PAGE - SERVICES
+========================================================= */
+
+.home-services {
+  border-top: 5px solid #2d8585;
+  padding: 27px 0 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+
+.service-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.highlight-card {
+  border: 3px solid #2d8585;
+  min-height: 290px;
+  text-align: center;
+  padding: 16px 35px 28px;
+  text-decoration: none;
+  color: #111;
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 1px solid #287d78;
+  background: #e1f3f3;
+  color: #087b77;
+  font-size: 72px;
+}
+
+.highlight-card h3 {
+  color: #287d78;
+  font-size: 24px;
+  margin: 4px 0 11px;
+}
+
+.highlight-card p {
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   PAGE CONTENT / PAGE HEADING
+========================================================= */
+
+.page-content {
+  padding: 52px 0 70px;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #2d8585;
+  padding-bottom: 6px;
+  margin-bottom: 37px;
+}
+
+.page-heading h1 {
+  color: #075e60;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.page-heading span {
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+/* =========================================================
+   DOCTORS PAGE - SEARCH AND FILTER
+========================================================= */
+
+.doctor-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 73px;
+}
+
+.search-box {
+  width: 275px;
+  height: 45px;
+  border: 1px solid #444;
+  box-shadow: 0 3px 4px #aaa;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.search-box input {
+  border: 0;
+  outline: 0;
+  flex: 1;
+  font-size: 16px;
+}
+
+.search-box span {
+  font-size: 31px;
+  color: #287d78;
+}
+
+.doctor-tools select {
+  width: 205px;
+  height: 45px;
+  padding: 0 25px;
+  border: 1px solid #444;
+  background: #fff;
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+/* =========================================================
+   DOCTORS PAGE - DOCTOR GRID
+========================================================= */
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 115px;
+}
+
+/* =========================================================
+   DOCTOR CARD
+========================================================= */
+
+.doctor-card {
+  min-height: 292px;
+  border: 1px solid #55b7b7;
+  box-shadow: 0 3px 4px #bbb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 15px 16px;
+}
+
+.doctor-card img {
+  width: 104px;
+  height: 104px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 13px;
+}
+
+.doctor-card h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.doctor-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.doctor-card p {
+  font-size: 14px;
+  line-height: 1.3;
+  min-height: 40px;
+}
+
+/* =========================================================
+   DOCTOR CARD - VIEW PROFILE BUTTON
+========================================================= */
+
+.small-btn {
+  display: inline-block;
+  margin-top: auto;
+  background: #fff;
+  border: 1px solid #075e60;
+  color: #287d78;
+  padding: 7px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.small-btn:hover {
+  background: #287d78;
+  color: #fff;
+}
+
+/* =========================================================
+   DOCTOR PROFILE PAGE
+========================================================= */
+
+/*
+   This section is used by:
+
+   doctor-carl.html
+   doctor-johnny.html
+   doctor-brian.html
+   doctor-john.html
+   doctor-lebron.html
+   doctor-cris.html
+*/
+
+.doctor-profile {
+  display: flex;
+  gap: 50px;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #55b7b7;
+  border-radius: 12px;
+  box-shadow: 0 3px 4px #bbb;
+  margin-top: 30px;
+}
+
+/* =========================================================
+   DOCTOR PROFILE - IMAGE
+========================================================= */
+
+.profile-image {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #777;
+}
+
+/* =========================================================
+   DOCTOR PROFILE - INFORMATION
+========================================================= */
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  color: #075e60;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.profile-info h3 {
+  color: #287d78;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+
+/* =========================================================
+   DOCTOR PROFILE - BUTTONS
+========================================================= */
+
+/*
+   The small-btn is reused for:
+   - View Profile
+   - Book an Appointment
+*/
+
+.profile-info .small-btn {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+/* Back to Doctors button */
+
+.back-btn {
+  display: inline-block;
+  background: #fff;
+  color: #075e60;
+  border: 1px solid #075e60;
+  padding: 7px 22px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.back-btn:hover {
+  background: #075e60;
+  color: #fff;
+}
+
+/* =========================================================
+   NO DOCTORS MESSAGE
+========================================================= */
+
+.empty-message {
+  display: none;
+  text-align: center;
+  margin: 35px;
+  font-size: 20px;
+}
+
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 98px 40px;
+  padding: 81px 3% 0;
+}
+
+.service-card {
+  border: 1px solid #333;
+  min-height: 240px;
+  text-align: center;
+  padding: 9px 20px 18px;
+}
+
+.round-icon {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: #e0f4f4;
+  border: 1px solid #287d78;
+  color: #087b77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 67px;
+  margin: -1px auto 8px;
+}
+
+.service-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   APPOINTMENTS PAGE
+========================================================= */
+
+.appointment-layout {
+  display: grid;
+  grid-template-columns: 580px 1fr;
+  gap: 55px;
+}
+
+.appointment-form {
+  border: 1px solid #222;
+  box-shadow: 0 3px 4px #999;
+  padding: 16px 22px 24px;
+}
+
+.appointment-form h2 {
+  font-size: 25px;
+  margin-bottom: 27px;
+}
+
+.appointment-form label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+
+.appointment-form input,
+.appointment-form select {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 4px;
+  border: 1px solid #444;
+  box-shadow: 0 3px 4px #999;
+  padding: 0 18px;
+  font-size: 18px;
+  background: #fff;
+}
+
+.submit-btn {
+  width: 92%;
+  margin: 8px 4% 0;
+  height: 48px;
+  border: 0;
+  background: #005d5d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* =========================================================
+   APPOINTMENT SIDE
+========================================================= */
+
+.appointment-side {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  padding-top: 61px;
+}
+
+.box {
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px #aaa;
+}
+
+/* =========================================================
+   UPCOMING APPOINTMENTS
+========================================================= */
+
+.upcoming h2 {
+  font-size: 25px;
+  padding: 18px 36px;
+  border-bottom: 1px solid #333;
+}
+
+.appointment-item {
+  display: grid;
+  grid-template-columns: 105px 1fr 1fr;
+  align-items: center;
+  gap: 25px;
+  padding: 30px 46px;
+}
+
+.date-badge {
+  border: 1px solid #287d78;
+  border-radius: 16px;
+  width: 96px;
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-badge strong {
+  font-size: 24px;
+}
+
+.date-badge b {
+  font-size: 23px;
+  margin-top: 7px;
+}
+
+.appointment-item h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.appointment-item p {
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.confirmed {
+  color: #00a83b;
+  font-size: 17px;
+}
+
+/* =========================================================
+   REMINDER
+========================================================= */
+
+.reminder {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding: 40px 65px;
+}
+
+.bell {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #005d5d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+}
+
+.reminder h2 {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.reminder p {
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+/* =========================================================
+   HEALTH INFORMATION - FEATURED ARTICLES
+========================================================= */
+
+.featured {
+  padding: 48px 58px 50px;
+}
+
+.featured > h2 {
+  font-size: 36px;
+  margin-bottom: 36px;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 110px;
+}
+
+.article-card {
+  border: 1px solid #333;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.article-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.article-body {
+  position: relative;
+  padding: 17px 14px 23px;
+  min-height: 168px;
+}
+
+.article-body h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.article-body p {
+  font-size: 19px;
+  line-height: 1.4;
+  max-width: 80%;
+}
+
+.read-btn {
+  position: absolute;
+  right: 27px;
+  bottom: 23px;
+  background: #005d5d;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 27px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* =========================================================
+   HEALTH INFORMATION - CATEGORIES
+========================================================= */
+
+.categories {
+  margin-top: 35px;
+}
+
+.categories h2 {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 85px;
+}
+
+.category-grid button {
+  height: 57px;
+  background: #fff;
+  border: 3px solid #075e60;
+  box-shadow: 0 3px 4px #999;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.category-grid button:hover {
+  background: #075e60;
+  color: #fff;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  background: #d8e7e9;
+  min-height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 4%;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #122c40;
+  font-size: 22px;
+}
+
+.footer-brand .brand-mark {
+  width: 42px;
+  height: 42px;
+  font-size: 25px;
+}
+
+/* =========================================================
+   LOGIN & SIGN UP PAGES
+========================================================= */
+
+.account-page {
+  background-color: #eef7f7;
+  min-height: 100vh;
+}
+
+/* =========================================================
+   ACCOUNT CONTAINER
+========================================================= */
+
+.account-container {
+  min-height: calc(100vh - 101px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 55px 20px;
+}
+
+/* =========================================================
+   ACCOUNT CARD
+========================================================= */
+
+.account-card {
+  width: 470px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #b7d7d7;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  padding: 38px 45px;
+
+  text-align: center;
+}
+
+/* SIGN UP CARD
+   Sign up needs a little more width because
+   it has more input fields.
+========================================================= */
+
+.signup-card {
+  width: 570px;
+}
+
+/* =========================================================
+   ACCOUNT LOGO
+========================================================= */
+
+.account-logo {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+.account-logo .brand-mark {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #287d78;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   ACCOUNT TITLE
+========================================================= */
+
+.account-card h1 {
+  color: #075e60;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.account-subtitle {
+  color: #666;
+
+  font-size: 16px;
+  line-height: 1.4;
+
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   ACCOUNT FORM
+========================================================= */
+
+.account-card form {
+  text-align: left;
+}
+
+/* FORM LABELS */
+
+.account-card form > label,
+.two-inputs label {
+  display: block;
+
+  color: #222;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-bottom: 17px;
+}
+
+/* =========================================================
+   ACCOUNT INPUTS
+========================================================= */
+
+.account-card input[type="text"],
+.account-card input[type="email"],
+.account-card input[type="tel"],
+.account-card input[type="password"] {
+  width: 100%;
+  height: 46px;
+
+  display: block;
+
+  margin-top: 7px;
+
+  padding: 0 14px;
+
+  border: 1px solid #aaa;
+  border-radius: 5px;
+
+  outline: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+  background-color: #ffffff;
+}
+
+/* INPUT FOCUS */
+
+.account-card input[type="text"]:focus,
+.account-card input[type="email"]:focus,
+.account-card input[type="tel"]:focus,
+.account-card input[type="password"]:focus {
+  border-color: #287d78;
+
+  box-shadow: 0 0 0 2px rgba(45, 133, 133, 0.15);
+}
+
+/* =========================================================
+   TWO INPUTS
+   Used for things like First Name / Last Name
+========================================================= */
+
+.two-inputs {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+/* =========================================================
+   LOGIN OPTIONS
+========================================================= */
+
+.account-options {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px 0 25px;
+
+  font-size: 14px;
+}
+
+/* REMEMBER ME */
+
+.remember {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 0 !important;
+
+  font-weight: 400 !important;
+}
+
+.remember input {
+  width: 15px;
+  height: 15px;
+
+  margin: 0;
+}
+
+/* =========================================================
+   ACCOUNT LINKS
+========================================================= */
+
+.account-options a,
+.account-switch a,
+.terms a {
+  color: #087b77;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.account-options a:hover,
+.account-switch a:hover,
+.terms a:hover {
+  color: #075e60;
+
+  text-decoration: underline;
+}
+
+/* =========================================================
+   ACCOUNT BUTTON
+   This now works with <a> instead of JavaScript/button.
+========================================================= */
+
+.account-btn {
+  width: 100%;
+  height: 49px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #075e60;
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.account-btn:hover {
+  background-color: #287d78;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   ACCOUNT DIVIDER
+========================================================= */
+
+.account-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 27px 0 20px;
+
+  color: #999;
+
+  font-size: 13px;
+}
+
+.account-divider::before,
+.account-divider::after {
+  content: "";
+
+  height: 1px;
+
+  background-color: #ddd;
+
+  flex: 1;
+}
+
+/* =========================================================
+   ACCOUNT SWITCH
+========================================================= */
+
+.account-switch {
+  color: #555;
+
+  font-size: 15px;
+
+  margin-bottom: 22px;
+}
+
+/* =========================================================
+   BACK TO HOME
+========================================================= */
+
+.back-home {
+  color: #075e60;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   TERMS AND CONDITIONS
+========================================================= */
+
+.terms {
+  display: flex !important;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  color: #555;
+
+  font-size: 14px !important;
+  font-weight: 400 !important;
+
+  margin: 4px 0 22px !important;
+}
+
+.terms input {
+  width: 16px;
+  height: 16px;
+
+  margin-top: 2px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   LOGIN & SIGN UP - MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+  .account-container {
+    min-height: calc(100vh - 90px);
+
+    padding: 35px 15px;
+  }
+
+  .account-card,
+  .signup-card {
+    width: 100%;
+    max-width: 470px;
+
+    padding: 30px 25px;
+  }
+
+  .signup-card {
+    max-width: 570px;
+  }
+
+  .account-card h1 {
+    font-size: 28px;
+  }
+
+  .account-subtitle {
+    font-size: 15px;
+  }
+
+  .two-inputs {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .account-options {
+    gap: 15px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .account-btn {
+    height: 48px;
+  }
+}
+/* =========================================================
+   TABLET RESPONSIVE - 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+  /* HEADER */
+  .main-nav {
+    gap: 18px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    gap: 35px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .hero-copy h1 {
+    font-size: 48px;
+  }
+
+  /* DOCTORS */
+  .doctor-grid {
+    gap: 35px;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+  }
+
+  /* APPOINTMENTS */
+  .appointment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-side {
+    padding-top: 0;
+  }
+
+  /* HEALTH INFORMATION */
+  .article-grid {
+    gap: 30px;
+  }
+
+  .category-grid {
+    gap: 20px;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE - 760px
+========================================================= */
+
+@media (max-width: 760px) {
+  /* HEADER */
+  .site-header {
+    height: auto;
+    min-height: 90px;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 4%;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+  }
+
+  /* HERO */
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+  }
+
+  .hero-copy h1 {
+    font-size: 42px;
+  }
+
+  .hero-copy p {
+    font-size: 18px;
+  }
+
+  .hero-image-wrap img {
+    height: 280px;
+  }
+
+  /* GENERAL GRIDS */
+  .service-highlight-grid,
+  .doctor-grid,
+  .services-grid,
+  .article-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PAGE HEADING */
+  .page-heading {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  /* DOCTOR SEARCH */
+  .doctor-tools {
+    gap: 18px;
+    align-items: stretch;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .search-box,
+  .doctor-tools select {
+    width: 100%;
+  }
+
+  /* =====================================================
+     DOCTOR PROFILE MOBILE
+  ===================================================== */
+
+  .doctor-profile {
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    width: 100%;
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .profile-info h2 {
+    font-size: 27px;
+  }
+
+  .profile-info h3 {
+    font-size: 18px;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+  }
+
+  .profile-info .small-btn,
+  .profile-info .back-btn {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* APPOINTMENTS */
+  .appointment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-item {
+    grid-template-columns: 80px 1fr;
+    padding: 24px;
+  }
+
+  .appointment-item > div:last-child {
+    grid-column: 2;
+  }
+
+  .appointment-side {
+    gap: 40px;
+  }
+
+  /* REMINDER */
+  .reminder {
+    padding: 30px;
+    gap: 25px;
+  }
+
+  /* HEALTH INFORMATION */
+  .featured {
+    padding: 30px 20px;
+  }
+
+  .article-body p {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .read-btn {
+    position: static;
+    display: inline-block;
+    margin-top: 18px;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* HERO BUTTONS */
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   LOGIN & SIGN UP - MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+  .account-container {
+    padding: 35px 15px;
+  }
+
+  .account-card,
+  .signup-card {
+    width: 100%;
+    max-width: 470px;
+    padding: 30px 25px;
+  }
+
+  .two-inputs {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .account-options {
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

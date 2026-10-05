@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCare | Appointments</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">✚</span
+        ><span
+          ><strong>MediCare</strong><small>HEALTHCARE SYSTEM</small></span
+        ></a
+      >
+      <nav class="main-nav">
+        <a href="index.html">Home</a><a href="doctors.html">Doctors</a
+        ><a href="services.html">Services</a
+        ><a class="active" href="appointments.html">Appointments</a
+        ><a href="health-information.html">Health Information</a>
+      </nav>
+    </header>
+    <main class="container page-content appointment-page">
+      <div class="page-heading">
+        <h1>Appointments</h1>
+        <span>Home &gt; Appointments</span>
+      </div>
+      <div class="appointment-layout">
+        <form class="appointment-form" id="appointmentForm">
+          <h2>Book an Appointment</h2>
+          <label
+            >Full Name<input
+              id="fullName"
+              type="text"
+              placeholder="Enter your full name"
+              required
+          /></label>
+          <label
+            >Phone Number<input
+              id="phone"
+              type="tel"
+              placeholder="Enter your phone number"
+              required
+          /></label>
+          <label
+            >Email Address<input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+          /></label>
+          <label
+            >Select Doctor<select required>
+              <option value="">Select a doctor</option>
+              <option>Dr. Carl Justine</option>
+              <option>Dr. Johnny Sins</option>
+              <option>Dr. Brian Carlo</option>
+              <option>Dr. John Yuri</option>
+              <option>Dr. LeBron James</option>
+              <option>Dr. Cris Jerome</option>
+            </select></label
+          >
+          <label
+            >Department / Service<select required>
+              <option value="">Select a service</option>
+              <option>Consultation</option>
+              <option>Laboratory</option>
+              <option>Pharmacy</option>
+              <option>Health Check-Up</option>
+              <option>Emergency Care</option>
+            </select></label
+          >
+          <label>Appointment Date<input type="date" required /></label>
+          <label
+            >Appointment Time<select required>
+              <option value="">Select time</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:30 AM</option>
+              <option>01:00 PM</option>
+              <option>02:30 PM</option>
+              <option>04:00 PM</option>
+            </select></label
+          >
+          <button class="submit-btn" type="submit">Book Appointment</button>
+        </form>
+
+        <div class="appointment-side">
+          <section class="upcoming box">
+            <h2>Upcoming Appointments</h2>
+            <div class="appointment-item">
+              <div class="date-badge"><strong>MAY</strong><b>23</b></div>
+              <div>
+                <h3>Chris Brown</h3>
+                <p>General Consultation</p>
+              </div>
+              <div>
+                <p>10:00 AM<br />Dr. Carl Justine</p>
+                <strong class="confirmed">Confirmed</strong>
+              </div>
+            </div>
+            <div class="appointment-item">
+              <div class="date-badge"><strong>MAY</strong><b>27</b></div>
+              <div>
+                <h3>Peter Parker</h3>
+                <p>Heart Check-up</p>
+              </div>
+              <div>
+                <p>11:30 AM<br />Dr. LeBron James</p>
+                <strong class="confirmed">Confirmed</strong>
+              </div>
+            </div>
+          </section>
+          <section class="reminder box">
+            <div class="bell">♩</div>
+            <div>
+              <h2>Reminders</h2>
+              <p>Please arrive 15 minutes before your scheduled appointment.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

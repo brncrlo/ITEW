@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCare | Doctors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">✚</span
+        ><span
+          ><strong>MediCare</strong><small>HEALTHCARE SYSTEM</small></span
+        ></a
+      >
+      <nav class="main-nav">
+        <a href="index.html">Home</a
+        ><a class="active" href="doctors.html">Doctors</a
+        ><a href="services.html">Services</a
+        ><a href="appointments.html">Appointments</a
+        ><a href="health-information.html">Health Information</a>
+      </nav>
+    </header>
+
+    <main class="container page-content">
+      <div class="page-heading">
+        <h1>Our Doctors</h1>
+        <span>Home &gt; Doctors</span>
+      </div>
+      <div class="doctor-tools">
+        <label class="search-box"
+          ><input
+            id="doctorSearch"
+            type="search"
+            placeholder="Search doctor..."
+          /><span>⌕</span></label
+        >
+        <select id="categoryFilter" aria-label="Filter doctors">
+          <option value="all">All Categories</option>
+          <option>General Physician</option>
+          <option>Pediatrician</option>
+          <option>Orthopedic Surgeon</option>
+          <option>Neurologist</option>
+          <option>Cardiologist</option>
+          <option>Dermatologist</option>
+        </select>
+      </div>
+
+      <section class="doctor-grid" id="doctorGrid">
+        <article
+          class="doctor-card"
+          data-category="General Physician"
+          data-name="Dr. Carl Justine"
+        >
+          <img
+            src="https://scontent-mnl3-2.xx.fbcdn.net/v/t1.15752-9/836725203_1733558144610913_5671388261923051657_n.png?stp=dst-webp_s640x640&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Lv4BbT8id0sQ7kNvwG1Iolx&_nc_oc=AdrkWwwCGD9QhZM5I5rGC1K9Yz7NHZBkAIkrZ1rg-tzOY-zlahYZtbLS0gbl_zhMGEo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-2.xx&_nc_ss=7a22e&oh=03_Q7cD6gFGC26VaaBjr8CobRNc8CNRZE65HmCQL8rcT6pyKBlH2A&oe=6AE9CA83"
+            alt="Dr. Carl Justine"
+          />
+          <h2>Dr. Carl Justine</h2>
+          <h3>General Physician</h3>
+          <p>Diagnoses and treats<br />a broad range of illnesses.</p>
+          <a class="small-btn" href="doctor-carl.html">View Profile</a>
+        </article>
+        <article
+          class="doctor-card"
+          data-category="Pediatrician"
+          data-name="Dr. Johnny Sins"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSU5GTYH71j0_tMUSfvNBieaM7hjlq1bHl7NAQqUHUmQ&s=10"
+            alt="Dr. Johnny Sins"
+          />
+          <h2>Dr. Johnny Sins</h2>
+          <h3>Pediatrician</h3>
+          <p>Provides medical care for infants,<br />children, and teens.</p>
+          <a class="small-btn" href="doctor-johnny.html">View Profile</a>
+        </article>
+        <article
+          class="doctor-card"
+          data-category="Orthopedic Surgeon"
+          data-name="Dr. Brian Carlo"
+        >
+          <img
+            src="https://scontent-mnl3-3.xx.fbcdn.net/v/t1.15752-9/825311374_1652806106227438_6602380795652121149_n.png?stp=dst-webp_s640x640&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fk-b9KRTXyIQ7kNvwEYoPz3&_nc_oc=AdrJrVgICnqlKP0Zzpto2EcXAcbvGu0vFO0PN68SX7UrlqsqJqrEyCoK1txSoQ8MCMs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_ss=7a22e&oh=03_Q7cD6gF06m7gzuBmYDgNpQOlBRzm7QUGkY9g4_tV1MlbHOfgmQ&oe=6AE99CFC"
+            alt="Dr. Brian Carlo"
+          />
+          <h2>Dr. Brian Carlo</h2>
+          <h3>Orthopedic Surgeon</h3>
+          <p>Performs surgery on bones,<br />joints, and muscles.</p>
+          <a class="small-btn" href="doctor-brian.html">View Profile</a>
+        </article>
+        <article
+          class="doctor-card"
+          data-category="Neurologist"
+          data-name="Dr. John Yuri"
+        >
+          <img
+            src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/829491203_1656117655871962_7521707993277606459_n.png?stp=dst-webp_s640x640&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=AWjdZ3n1dKwQ7kNvwFYj2WT&_nc_oc=Adq6xY1s9IT9jNyfY2ONeLnKePKQnX2KEUiH_h6pWF-RqKTZsZ1LWzJDNBvZf-2s9Gk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl1-2.xx&_nc_ss=7a22e&oh=03_Q7cD6gGRrBprKmqkeuZ2lKk__bTaBX6DrXmsVqRHpdmEC0R6pg&oe=6AE9C922"
+            alt="Dr. John Yuri"
+          />
+          <h2>Dr. John Yuri</h2>
+          <h3>Neurologist</h3>
+          <p>Treats disorders of the brain<br />and nervous system.</p>
+          <a class="small-btn" href="doctor-john.html">View Profile</a>
+        </article>
+        <article
+          class="doctor-card"
+          data-category="Cardiologist"
+          data-name="Dr. LeBron James"
+        >
+          <img
+            src="https://scontent-mnl3-2.xx.fbcdn.net/v/t1.15752-9/828858886_1570866367532332_2277404017718006488_n.png?stp=dst-webp_s526x395&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=AqgU_WtHuvIQ7kNvwF_D0gm&_nc_oc=AdrSly3b-yCeMv7tU3_iMifZOWSsLV9kIsLXX4Xn_FtBs9O06ByBP1TwZgpaPYId8ac&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-2.xx&_nc_ss=7a22e&oh=03_Q7cD6gHyyFXAjRqGleQsX7niUvcjDbvGazlZWsMTATdzZ7-82w&oe=6AE9A662"
+            alt="Dr. LeBron James"
+          />
+          <h2>Dr. LeBron James</h2>
+          <h3>Cardiologist</h3>
+          <p>Specializes in heart health and<br />cardiovascular diseases.</p>
+          <a class="small-btn" href="doctor-lebron.html">View Profile</a>
+        </article>
+        <article
+          class="doctor-card"
+          data-category="Dermatologist"
+          data-name="Dr. Cris Jorome"
+        >
+          <img
+            src="https://scontent-mnl3-1.xx.fbcdn.net/v/t1.15752-9/829657066_1337196554987939_8925196597736763358_n.png?stp=dst-webp_s640x640&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=GAqu6MEu4L0Q7kNvwGnMZoJ&_nc_oc=AdotlmX8t2bQ6sOVMEl8QndpOS9vKwxC0y8AcwGw4-IkW8UTprwjO3b2QqvYACIeoO8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-1.xx&_nc_ss=7a22e&oh=03_Q7cD6gFf9NcR1AGwL70TmTJAhlqZpFQPeCcvMmdt-ovQYfO6sQ&oe=6AE9CB6E"
+            alt="Dr. Cris Jorome"
+          />
+          <h2>Dr. Cris Jorome</h2>
+          <h3>Dermatologist</h3>
+          <p>Focuses on skin, hair,<br />and nail health.</p>
+          <a class="small-btn" href="doctor-cris.html">View Profile</a>
+        </article>
+      </section>
+      <p class="empty-message" id="emptyMessage">No doctors found.</p>
+    </main>
+  </body>
+</html>
